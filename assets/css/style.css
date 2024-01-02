@@ -32,7 +32,7 @@
   --pistachio_50: hsla(86, 45%, 54%, 0.5);
   --baby-powder: hsl(86, 41%, 97%);
   --light-gray: hsl(0, 0%, 80%);
-  --pistachio: hsl(86, 45%, 54%);
+  --pistachio: hsl(150, 50%, 40%);
   --platinum: hsl(0, 0%, 91%);
   --cultured: hsl(0, 0%, 94%);
   --white-60: hsla(0, 0%, 100%, 0.6);
@@ -1194,6 +1194,15 @@ body {
    * HERO
    */
 
+   .h1.hero-title {
+    font-size: 50px;
+  }
+
+
+  .h2.section-title {
+    font-size: 25px;
+  }
+  
   .hero {
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
@@ -1462,8 +1471,34 @@ body {
    */
 
   .footer .container {
-    margin-inline: 30px;
+    margin-inline: 10px;
     width: auto;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
   }
+
+  .footer-list a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .footer-list li a strong {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .playstore a {
+    /* display: inline-block; */
+    max-width: 150px; /* Sesuaikan ukuran maksimum sesuai kebutuhan */
+    width: 100%;
+    height: auto;
+    margin-right: 10px; /* Jarak antara badge */
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
 
 }
