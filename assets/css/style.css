@@ -35,7 +35,7 @@
   /* --pistachio: hsl(150, 50%, 40%); */
   --pistachio:  hsl(5, 70%, 50%);
 
-  --pistachio-2: HSL(240, 65%, 50%);
+  --pistachio-2: hsl(5, 70%, 50%);
   --platinum: hsl(0, 0%, 91%);
   --cultured: hsl(0, 0%, 94%);
   --white-60: hsla(0, 0%, 100%, 0.6);
@@ -895,6 +895,8 @@ body {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
+  width: auto;
+  height: auto;
 }
 
 .insta-post-list::-webkit-scrollbar { display: none; }
@@ -902,6 +904,7 @@ body {
 .insta-post-item {
   min-width: 90%;
   scroll-snap-align: center;
+  
 }
 
 
@@ -977,12 +980,18 @@ body {
 
 /* STYLE ICON  */
 -------------------------------------/
-.social-icons {
+/* .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 400px;
   margin: 0 auto;
+} */
+
+.social-icons {
+  display-content: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara ikon */
 }
 
 .social-icons a {
@@ -992,8 +1001,9 @@ body {
 
 .social-icons svg {
   text-align: center;
-  width: 25px;
-  height: 25px;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
   margin: 5px;
   fill: #fff; /* Ubah warna ikon menjadi putih */
 }
@@ -1353,7 +1363,10 @@ body {
    * INSTA POST
    */
 
-  .insta-post-item { min-width: 24%; }
+  .insta-post-item { 
+    min-width: 24%;
+    
+  }
 
 }
 
